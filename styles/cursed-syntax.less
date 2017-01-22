@@ -1,0 +1,291 @@
+@import 'colors';
+@import 'syntax-variables';
+
+.comment {
+    color: @syntax-color-comment;
+}
+
+.constant {
+    color: @syntax-color-constant;
+
+    &.character.escape {
+        color: @cursed_teal;
+
+        &.python {
+            color: @cursed_banana;
+        }
+    }
+
+    // &.numeric {
+    //     color: @syntax-color-value;
+    // }
+
+    &.other.color {
+        color: @cursed_teal;
+    }
+
+    &.other.symbol {
+        color: @cursed_leaf;
+    }
+}
+
+.css {
+    &.class {
+        color: @cursed_purple;
+    }
+
+    &.pseudo-element {
+        color: @cursed_apple;
+    }
+}
+
+.entity {
+    &.name.function {
+        color: @syntax-color-function;
+    }
+
+    &.name.type,
+    &.name.class,
+    &.name.type.class {
+        color: @syntax-color-class;
+    }
+
+    &.name.section {
+        color: @cursed_khaki;
+    }
+
+    &.name.tag {
+        color: @cursed_scrubs;
+    }
+
+    &.id {
+        color: @cursed_emerald;
+    }
+
+    &.inherited-class {
+        color: @cursed_cream;
+    }
+}
+
+.html {
+    &.punctuation.definition.tag {
+        color: @cursed_scrubs;
+    }
+}
+
+.invalid.illegal {
+    background-color: @cursed_strawberry;
+    color: @syntax-background-color;
+}
+
+.keyword {
+    color: @syntax-color-keyword;
+
+    &.control {
+        color: @cursed_khaki;
+    }
+
+    &.operator {
+        color: @syntax-text-color;
+    }
+
+    &.operator.python {
+        color: @cursed_scrubs;
+    }
+
+    &.other.special-method {
+        color: @cursed_mustard;
+    }
+
+    &.other.unit {
+        color: @cursed_mustard;
+    }
+
+    &.control.exception {
+        color: @cursed_raspberry;
+    }
+}
+
+.markup {
+    &.bold {
+        color: @cursed_egg;
+        font-weight: bold;
+    }
+
+    &.changed {
+        color: @cursed_lilac;
+    }
+
+    &.deleted {
+        color: @cursed_strawberry;
+    }
+
+    &.italic {
+        color: @cursed_purple;
+        font-style: italic;
+    }
+
+    &.heading .punctuation.definition.heading {
+        color: @cursed_emerald;
+    }
+
+    &.inserted {
+        color: @cursed_leaf;
+    }
+
+    &.list {
+        color: @cursed_strawberry;
+    }
+
+    &.quote {
+        color: @cursed_egg;
+    }
+
+    &.raw.inline {
+        color: @cursed_leaf;
+    }
+}
+
+.meta {
+    &.class {
+        color: @cursed_cream;
+    }
+
+    &.link {
+        color: @cursed_raspberry;
+    }
+
+    &.require {
+        color: @cursed_apple;
+    }
+
+    &.selector {
+        color: @cursed_purple;
+    }
+
+    &.separator {
+        background-color: @gray_50;
+        color: @syntax-text-color;
+    }
+
+    &.function-call {
+        color: @cursed_cream;
+    }
+}
+
+.none {
+    color: @syntax-text-color;
+}
+
+.punctuation {
+    &.definition {
+        &.comment {
+            color: @syntax-color-comment;
+        }
+
+        &.string {
+            color: @cursed_teal;
+        }
+
+        &.parameters,
+        &.array {
+            color: @syntax-text-color;
+        }
+
+        &.variable {
+            color: @syntax-color-variable;
+        }
+
+        &.heading,
+        &.identity {
+            color: @cursed_teal;
+        }
+
+        &.bold {
+            color: @cursed_mustard;
+            font-weight: bold;
+        }
+
+        &.italic {
+            color: @cursed_purple;
+            font-style: italic;
+        }
+    }
+
+    &.section.embedded {
+        color: darken(@cursed_strawberry, 10%);
+    }
+}
+
+.source.gfm {
+    .link {
+        color: @cursed_teal;
+
+        &.markup {
+            color: @cursed_mustard;
+        }
+    }
+
+    .heading {
+        color: @cursed_khaki;
+    }
+
+    .markup.code {
+        color: @cursed_khaki;
+    }
+}
+
+.storage {
+    color: @cursed_purple;
+
+    &.modifier {
+        color: @cursed_scrubs;
+
+        &.extends,
+        &.implements {
+            color: @cursed_purple;
+        }
+    }
+}
+
+.string {
+    color: @cursed_teal;
+
+    &.regexp {
+        color: @cursed_emerald;
+
+        .source.ruby.embedded {
+            color: @undecided;
+        }
+    }
+
+    &.other.link {
+        color: @undecided;
+    }
+}
+
+.support {
+    &.class {
+        color: @cursed_cream;
+    }
+
+    &.function  {
+        color: @gray_75;
+
+        &.any-method {
+            color: @gray_75;
+        }
+    }
+}
+
+.variable {
+    color: @cursed_banana;
+
+    &.interpolation {
+        color: darken(@cursed_strawberry, 10%);
+    }
+
+    &.parameter.function {
+        color: @syntax-text-color;
+    }
+}
