@@ -1,17 +1,17 @@
 @import 'colors';
 @import 'syntax-variables';
 
-.comment {
+.syntax--comment {
     color: @syntax-color-comment;
 }
 
-.constant {
+.syntax--constant {
     color: @syntax-color-constant;
 
-    &.character.escape {
+    &.syntax--character.syntax--escape {
         color: @cursed_teal;
 
-        &.python {
+        &.syntax--python {
             color: @cursed_banana;
         }
     }
@@ -20,272 +20,272 @@
     //     color: @syntax-color-value;
     // }
 
-    &.other.color {
+    &.syntax--other.syntax--color {
         color: @cursed_teal;
     }
 
-    &.other.symbol {
+    &.syntax--other.syntax--symbol {
         color: @cursed_leaf;
     }
 }
 
-.css {
-    &.class {
+.syntax--css {
+    &.syntax--class {
         color: @cursed_purple;
     }
 
-    &.pseudo-element {
+    &.syntax--pseudo-element {
         color: @cursed_apple;
     }
 }
 
-.entity {
-    &.name.function {
+.syntax--entity {
+    &.syntax--name.syntax--function {
         color: @syntax-color-function;
     }
 
-    &.name.type,
-    &.name.class,
-    &.name.type.class {
+    &.syntax--name.syntax--type,
+    &.syntax--name.syntax--class,
+    &.syntax--name.syntax--type.syntax--class {
         color: @syntax-color-class;
     }
 
-    &.name.section {
+    &.syntax--name.syntax--section {
         color: @cursed_khaki;
     }
 
-    &.name.tag {
+    &.syntax--name.syntax--tag {
         color: @cursed_scrubs;
     }
 
-    &.id {
+    &.syntax--id {
         color: @cursed_emerald;
     }
 
-    &.inherited-class {
+    &.syntax--inherited-class {
         color: @cursed_cream;
     }
 }
 
-.html {
-    &.punctuation.definition.tag {
+.syntax--html {
+    &.syntax--punctuation.syntax--definition.syntax--tag {
         color: @cursed_scrubs;
     }
 }
 
-.invalid.illegal {
+.syntax--invalid.syntax--illegal {
     background-color: @cursed_strawberry;
     color: @syntax-background-color;
 }
 
-.keyword {
+.styntax--keyword {
     color: @syntax-color-keyword;
 
-    &.control {
+    &.syntax--control {
         color: @cursed_khaki;
     }
 
-    &.operator {
+    &.syntax--operator {
         color: @syntax-text-color;
     }
 
-    &.operator.python {
+    &.syntax--operator.syntax--python {
         color: @cursed_scrubs;
     }
 
-    &.other.special-method {
+    &.syntax--other.syntax--special-method {
         color: @cursed_mustard;
     }
 
-    &.other.unit {
+    &.syntax--other.syntax--unit {
         color: @cursed_mustard;
     }
 
-    &.control.exception {
+    &.syntax--control.syntax--exception {
         color: @cursed_raspberry;
     }
 }
 
-.markup {
-    &.bold {
+.syntax--markup {
+    &.syntax--bold {
         color: @cursed_bright;
         font-weight: bold;
     }
 
-    &.changed {
+    &.syntax--changed {
         color: @cursed_lilac;
     }
 
-    &.deleted {
+    &.syntax--deleted {
         color: @cursed_strawberry;
     }
 
-    &.italic {
+    &.syntax--italic {
         color: @cursed_purple;
         font-style: italic;
     }
 
-    &.heading .punctuation.definition.heading {
+    &.syntax--heading .syntax--punctuation.syntax--definition.syntax--heading {
         color: @cursed_emerald;
     }
 
-    &.inserted {
+    &.syntax--inserted {
         color: @cursed_leaf;
     }
 
-    &.list {
+    &.syntax--list {
         color: @cursed_strawberry;
     }
 
-    &.quote {
+    &.syntax--quote {
         color: @cursed_bright;
     }
 
-    &.raw.inline {
+    &.syntax--raw.syntax--inline {
         color: @cursed_leaf;
     }
 }
 
-.meta {
-    &.class {
+.syntax--meta {
+    &.syntax--class {
         color: @cursed_cream;
     }
 
-    &.link {
+    &.syntax--link {
         color: @cursed_raspberry;
     }
 
-    &.require {
+    &.syntax--require {
         color: @cursed_apple;
     }
 
-    &.selector {
+    &.syntax--selector {
         color: @cursed_purple;
     }
 
-    &.separator {
+    &.syntax--separator {
         background-color: @gray_50;
         color: @syntax-text-color;
     }
 
-    &.function-call {
+    &.syntax--function-call {
         color: @cursed_cream;
     }
 }
 
-.none {
+.syntax--none {
     color: @syntax-text-color;
 }
 
-.punctuation {
-    &.definition {
-        &.comment {
+.syntax--punctuation {
+    &.syntax--definition {
+        &.syntax--comment {
             color: @syntax-color-comment;
         }
 
-        &.string {
+        &.syntax--string {
             color: @cursed_teal;
         }
 
-        &.parameters,
-        &.array {
+        &.syntax--parameters,
+        &.syntax--array {
             color: @syntax-text-color;
         }
 
-        &.variable {
+        &.syntax--variable {
             color: @syntax-color-variable;
         }
 
-        &.heading,
-        &.identity {
+        &.syntax--heading,
+        &.syntax--identity {
             color: @cursed_teal;
         }
 
-        &.bold {
+        &.syntax--bold {
             color: @cursed_mustard;
             font-weight: bold;
         }
 
-        &.italic {
+        &.syntax--italic {
             color: @cursed_purple;
             font-style: italic;
         }
     }
 
-    &.section.embedded {
+    &.syntax--section.syntax--embedded {
         color: darken(@cursed_strawberry, 10%);
     }
 }
 
-.source.gfm {
-    .link {
+.syntax--source.syntax--gfm {
+    .syntax--link {
         color: @cursed_teal;
 
-        &.markup {
+        &.syntax--markup {
             color: @cursed_mustard;
         }
     }
 
-    .heading {
+    .syntax--heading {
         color: @cursed_khaki;
     }
 
-    .markup.code {
+    .syntax--markup.syntax--code {
         color: @cursed_khaki;
     }
 }
 
-.storage {
+.syntax--storage {
     color: @cursed_purple;
 
-    &.modifier {
+    &.syntax--modifier {
         color: @cursed_scrubs;
 
-        &.extends,
-        &.implements {
+        &.syntax--extends,
+        &.syntax--implements {
             color: @cursed_purple;
         }
     }
 }
 
-.string {
+.syntax--string {
     color: @cursed_teal;
 
-    &.regexp {
+    &.syntax--regexp {
         color: @cursed_emerald;
 
-        .source.ruby.embedded {
+        .syntax--source.syntax--ruby.syntax--embedded {
             color: @undecided;
         }
     }
 
-    &.other.link {
+    &.syntax--other.syntax--link {
         color: @undecided;
     }
 }
 
-.support {
-    &.class {
+.syntax--support {
+    &.syntax--class {
         color: @cursed_cream;
     }
 
-    &.function  {
+    &.syntax--function  {
         color: @gray_75;
 
-        &.any-method {
+        &.syntax--any-method {
             color: @gray_75;
         }
     }
 }
 
-.variable {
+.syntax--variable {
     color: @cursed_banana;
 
-    &.interpolation {
+    &.syntax--interpolation {
         color: darken(@cursed_strawberry, 10%);
     }
 
-    &.parameter.function {
+    &.syntax--parameter.syntax--function {
         color: @syntax-text-color;
     }
 }
